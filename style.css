@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #eee;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: min(900px, 95%);
+}
+
+.client-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.client-register>* {
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    font-size: 1.2rem;
+}
+
+.client-register button {
+    background-color: rgba(0, 255, 0, 0.473);
+    cursor: pointer;
+}
+
+#nome:focus,
+#email:focus {
+    outline: none;
+}
+
+.client-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.client-list li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: #ddd;
+    position: relative;
+}
+
+.client-list button {
+    height: 100%;
+    width: 60px;
+    position: absolute;
+    background-color: #ff0303;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.client-list span {
+    background-color: #eee;
+    height: 30px;
+    width: 100%;
+}
