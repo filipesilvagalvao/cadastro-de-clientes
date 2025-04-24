@@ -61,5 +61,7 @@ function showClients() {
         .catch(error => console.error(error));
 }
 
+showClients()
+
 
 
